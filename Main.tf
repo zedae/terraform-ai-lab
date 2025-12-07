@@ -52,8 +52,8 @@ resource "docker_container" "ollama" {
 
   # Mapping des ports (Host <- Container)
   ports {
-    internal = 11435
-    external = 11435
+    internal = 11434
+    external = 11434
   }
 
   # Montage du volume
@@ -92,7 +92,7 @@ resource "docker_container" "webui" {
 
   # Variables d'environnement
   env = [
-    "OLLAMA_BASE_URL=http://ollama:11435"
+    "OLLAMA_BASE_URL=http://ollama:11434"
   ]
 
   # Montage du volume
